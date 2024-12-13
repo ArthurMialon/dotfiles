@@ -1,6 +1,5 @@
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-# source
 source "$HOME/.config/zsh/aliases.zsh"
 source "$HOME/.config/zsh/exports.zsh"
 source "$HOME/.config/zsh/functions.zsh"
