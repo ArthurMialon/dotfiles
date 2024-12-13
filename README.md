@@ -38,5 +38,5 @@ dot add ~/.aws/credentials secrets
 ### Export new dependencies to Brewfile
 
 ```bash
-brew bundle dump
+brew bundle dump --force
 ```
