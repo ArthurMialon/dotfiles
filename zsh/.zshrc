@@ -21,3 +21,5 @@ export HOMEBREW_BUNDLE_FILE="$HOME/.config/Brewfile"
 export EDITOR=zed
 
 eval "$(starship init zsh)"
+
+export PATH=$PATH:/Users/arthurmialon/.dot
