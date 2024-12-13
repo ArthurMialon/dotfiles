@@ -1,0 +1,54 @@
+{
+  "inline_completions": {
+    "disabled_globs": [".env"]
+  },
+  "assistant": {
+    "dock": "left",
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "claude-3-5-sonnet"
+    },
+    "version": "2"
+  },
+  "ui_font_size": 16,
+  "buffer_font_size": 16,
+  "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "One Dark"
+  },
+  "tabs": {
+    "git_status": true
+  },
+  "indent_guides": {
+    "enabled": true
+  },
+  "project_panel": {
+    "dock": "right"
+  },
+  "show_completions_on_input": true,
+  "show_inline_completions": true,
+  "show_whitespaces": "all",
+  "format_on_save": "on",
+  "formatter": "prettier",
+  "languages": {
+    "Dockerfile": {
+      "show_inline_completions": true
+    },
+    "JavaScript": {
+      "code_actions_on_format": {
+        "source.fixAll.eslint": true
+      }
+    },
+    "TypeScript": {
+      "code_actions_on_format": {
+        "source.fixAll.eslint": true
+      }
+    },
+    "TSX": {
+      "code_actions_on_format": {
+        "source.fixAll.eslint": true
+      }
+    }
+  }
+}

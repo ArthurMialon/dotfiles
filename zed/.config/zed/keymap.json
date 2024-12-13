@@ -1,0 +1,26 @@
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      "cmd-r": "workspace::ToggleLeftDock",
+      "cmd-b": "workspace::ToggleRightDock",
+      "ctrl-shift-:": "editor::ToggleInlayHints"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "cmd-r": "workspace::ToggleLeftDock",
+      "cmd-b": "workspace::ToggleRightDock",
+      "cmd-shift-/": ["editor::ToggleComments", { "advance_downwards": false }],
+      "cmd->": ["editor::ToggleComments", { "advance_downwards": false }]
+    }
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      // "cmd-t": "workspace::ToggleBottomDock"
+      "cmd-t": "workspace::NewTerminal"
+    }
+  }
+]

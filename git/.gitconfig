@@ -1,0 +1,30 @@
+[alias]
+	c = commit -am
+	p = push
+	pf = push --force
+	lg = "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+	comit = commit
+	commmit = commit
+	last-commit = "log --pretty=format:'%h' -n 1 | pbcopy"
+	wip = "!f() { git add . && git commit -m 'WIP:'; }; f"
+	unwip = "!f() { git reset HEAD~; }; f"
+	go = "!f() { git checkout -b \"$1\" 2> /dev/null || git checkout \"$1\"; }; f"
+	diff = "!f() { [ -z \"$GIT_PREFIX\" ] || cd \"$GIT_PREFIX\" && git diff --color \"$@\" | diff-so-fancy  | less --tabs=4 -RFX; }; f"
+	dss = "!f() { [ -z \"$GIT_PREFIX\" ] || cd \"$GIT_PREFIX\" && git diff --color \"$@\" | diff-so-fancy  | less --tabs=4 -RFX; }; f"
+[user]
+	name = Arthur Mialon
+	email = arthurmialon@gmail.com
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
+[pull]
+	rebase = true
+[rerere]
+	enabled = true
+[credential]
+	helper = cache --timeout=3600
+[init]
+	defaultBranch = main
+[core]
+    editor = vim
