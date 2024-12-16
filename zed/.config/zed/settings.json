@@ -26,6 +26,9 @@
   "project_panel": {
     "dock": "right"
   },
+  "terminal": {
+    "font_family": "FiraCode Nerd Font"
+  },
   "show_completions_on_input": true,
   "show_inline_completions": true,
   "show_whitespaces": "all",
