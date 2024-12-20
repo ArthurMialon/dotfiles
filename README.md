@@ -5,7 +5,7 @@
 ### From scratch (new mac)
 
 ```
-curl -fsSL https://raw.githubusercontent.com/arthurmialon/dotfiles/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/arthurmialon/dotfiles/main/.scripts/install.sh | bash
 ```
 
 ### From existing
