@@ -4,6 +4,7 @@
     "bindings": {
       "cmd-r": "workspace::ToggleLeftDock",
       "cmd-b": "workspace::ToggleRightDock",
+      "cmd-shift-/": ["editor::ToggleComments", { "advance_downwards": false }],
       "ctrl-shift-:": "editor::ToggleInlayHints"
     }
   },

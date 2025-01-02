@@ -1,0 +1,3 @@
+# Quick terminal
+quick-terminal-position = bottom
+keybind = global:ctrl+opt+t=toggle_quick_terminal
