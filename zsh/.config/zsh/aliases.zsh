@@ -11,4 +11,3 @@ alias pico="ssh pi@192.168.1.49"
 alias dotfiles="cd $HOME/code/arthurmialon/dotfiles"
 alias tf=terraform
 alias dev="cd $HOME/code"
-alias nopillo="cd $HOME/code/nopillo"
