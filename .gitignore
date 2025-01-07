@@ -3,3 +3,6 @@
 Brewfile.lock.json
 
 secrets/
+
+aws/.aws/config
+aws/.aws/credentials
