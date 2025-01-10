@@ -26,3 +26,6 @@ export PATH=$PATH:/Users/arthurmialon/.dot
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+export NOPILLO_APP_FOLDER="${HOME}/code/nopillo/app"
+source $NOPILLO_APP_FOLDER/scripts/nopillo-cli.zsh
