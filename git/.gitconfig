@@ -11,6 +11,11 @@
 	go = "!f() { git checkout -b \"$1\" 2> /dev/null || git checkout \"$1\"; }; f"
 	diff = "!f() { [ -z \"$GIT_PREFIX\" ] || cd \"$GIT_PREFIX\" && git diff --color \"$@\" | diff-so-fancy  | less --tabs=4 -RFX; }; f"
 	dss = "!f() { [ -z \"$GIT_PREFIX\" ] || cd \"$GIT_PREFIX\" && git diff --color \"$@\" | diff-so-fancy  | less --tabs=4 -RFX; }; f"
+    autofixup = "!f() { \
+        COMMIT_HASH=$(git log --pretty=oneline | fzf | awk '{print $1}'); \
+        git commit --fixup $COMMIT_HASH; \
+        GIT_SEQUENCE_EDITOR=: git rebase --autostash --autosquash -i $COMMIT_HASH^; \
+        }; f"
 [user]
 	name = Arthur Mialon
 	email = arthurmialon@gmail.com
