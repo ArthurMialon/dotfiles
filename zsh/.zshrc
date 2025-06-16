@@ -17,7 +17,7 @@ plugins=(git aws)
 source $ZSH/oh-my-zsh.sh
 
 export HOMEBREW_BUNDLE_FILE="$HOME/.config/Brewfile"
-export EDITOR=zed
+export EDITOR=cursor
 
 eval "$(starship init zsh)"
 
@@ -27,5 +27,10 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+export NPM_TOKEN=""
+
 export NOPILLO_APP_FOLDER="${HOME}/code/nopillo/app"
 source $NOPILLO_APP_FOLDER/scripts/nopillo-cli.zsh
+
+# Scaleway CLI autocomplete initialization.
+eval "$(scw autocomplete script shell=zsh)"

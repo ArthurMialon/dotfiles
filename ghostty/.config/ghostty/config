@@ -2,3 +2,8 @@
 quick-terminal-position = bottom
 keybind = global:ctrl+opt+t=toggle_quick_terminal
 font-size=20
+
+
+# custom-shader = ghostty-shaders/spotlight.glsl
+# custom-shader = ghostty-shaders/retro-terminal.glsl
+# custom-shader = ghostty-shaders/in-game-crt.glsl
