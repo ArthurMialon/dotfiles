@@ -35,6 +35,12 @@ Use it for `.aws/credentials` too for example;
 dot add ~/.aws/credentials secrets
 ```
 
+### Install brew dependencies
+
+```bash
+brew bundle install
+```
+
 ### Export new dependencies to Brewfile
 
 ```bash
