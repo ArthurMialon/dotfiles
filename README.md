@@ -15,7 +15,7 @@ curl -fsSL https://raw.githubusercontent.com/arthurmialon/dotfiles/main/.scripts
 - [Dot CLI](https://github.com/ArthurMialon/dot)
 - [Homebrew](https://brew.sh/)
 
-```bash
+```bash 
 dot init git@github.com:ArthurMialon/dotfiles.git
 ```
 
@@ -35,6 +35,8 @@ Use it for `.aws/credentials` too for example;
 dot add ~/.aws/credentials secrets
 ```
 
+## Brew dependencies
+
 ### Install brew dependencies
 
 ```bash
@@ -45,4 +47,13 @@ brew bundle install
 
 ```bash
 brew bundle dump --force
+```
+
+## Keyboard settings
+
+_Ultra fast keyboard_
+
+```shell
+defaults write -g KeyRepeat -int 1
+defaults write -g InitialKeyRepeat -int 10
 ```

@@ -29,8 +29,5 @@ export NVM_DIR="$HOME/.nvm"
 
 export NPM_TOKEN=""
 
-export NOPILLO_APP_FOLDER="${HOME}/code/nopillo/app"
-source $NOPILLO_APP_FOLDER/scripts/nopillo-cli.zsh
-
 # Scaleway CLI autocomplete initialization.
-eval "$(scw autocomplete script shell=zsh)"
+# eval "$(scw autocomplete script shell=zsh)"
