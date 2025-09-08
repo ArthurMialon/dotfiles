@@ -35,6 +35,17 @@ Use it for `.aws/credentials` too for example;
 dot add ~/.aws/credentials secrets
 ```
 
+## Setup Starship prompt
+
+```bash
+brew install starship
+```
+
+```bash
+starship init zsh
+source ~/.zshrc
+```
+
 ## Brew dependencies
 
 ### Install brew dependencies
