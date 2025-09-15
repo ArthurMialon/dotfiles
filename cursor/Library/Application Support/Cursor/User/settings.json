@@ -65,9 +65,12 @@
     "*.sdb": "${capture}.${extname}-*",
     "*.s3db": "${capture}.${extname}-*"
   },
-  "workbench.colorTheme": "GitHub Dark",
   "github.gitProtocol": "ssh",
   "terminal.integrated.fontFamily": "FiraCode Nerd Font Propo",
   "terminal.integrated.fontSize": 14,
-  "cursor.cpp.disabledLanguages": ["plaintext", "scminput"]
+  "cursor.cpp.disabledLanguages": [
+    "plaintext",
+    "scminput"
+  ],
+  "workbench.colorTheme": "GitHub Dark"
 }

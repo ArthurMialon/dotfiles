@@ -21,7 +21,7 @@ export EDITOR=cursor
 
 eval "$(starship init zsh)"
 
-export PATH=$PATH:/Users/arthurmialon/.dot
+export PATH=$PATH:/Users/$USER/.dot
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
