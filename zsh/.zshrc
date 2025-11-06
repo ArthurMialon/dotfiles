@@ -17,7 +17,7 @@ plugins=(git aws)
 source $ZSH/oh-my-zsh.sh
 
 export HOMEBREW_BUNDLE_FILE="$HOME/.config/Brewfile"
-export EDITOR=cursor
+export EDITOR=zed
 
 eval "$(starship init zsh)"
 

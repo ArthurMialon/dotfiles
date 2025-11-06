@@ -67,10 +67,16 @@
   },
   "github.gitProtocol": "ssh",
   "terminal.integrated.fontFamily": "FiraCode Nerd Font Propo",
-  "terminal.integrated.fontSize": 14,
   "cursor.cpp.disabledLanguages": [
     "plaintext",
     "scminput"
   ],
-  "workbench.colorTheme": "GitHub Dark"
+  "workbench.colorTheme": "GitHub Dark Default",
+  "terminal.integrated.fontSize": 11,
+  "eslint.format.enable": true,
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  "typescript.tsserver.maxTsServerMemory": 5000,
+  "deno.enable": false,
+  "cursor.composer.shouldChimeAfterChatFinishes": true,
+  "cursor.composer.shouldAllowCustomModes": true,
 }

@@ -1,0 +1,107 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "centered_layout": {
+    "right_padding": 0.20000004768371582
+  },
+  "file_finder": {
+    "git_status": true
+  },
+  "bottom_dock_layout": "contained",
+  "tabs": {
+    "activate_on_close": "left_neighbour",
+    "file_icons": true,
+    "git_status": false
+  },
+  "title_bar": {
+    "show_menus": false,
+    "show_branch_icon": true
+  },
+  "outline_panel": {
+    "indent_size": 20.0
+  },
+  "buffer_font_size": 15.0,
+  "icon_theme": "Catppuccin Latte",
+  "inlay_hints": {
+    "show_other_hints": false,
+    "show_parameter_hints": false,
+    "show_value_hints": true,
+    "show_type_hints": false,
+    "enabled": true
+  },
+  "buffer_font_family": "FiraCode Nerd Font",
+  "agent": {
+    "default_model": {
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-5-latest"
+    },
+    "play_sound_when_agent_done": true,
+    "dock": "left",
+    "model_parameters": []
+  },
+  "project_panel": {
+    "indent_size": 15.0,
+    "hide_root": true,
+    "entry_spacing": "comfortable",
+    "hide_gitignore": false,
+    "default_width": 240.0,
+    "dock": "right"
+  },
+  "languages": {
+    "TypeScript": {
+      "inlay_hints": {
+        "show_other_hints": true,
+        "show_parameter_hints": true,
+        "show_background": false,
+        "show_type_hints": false,
+        "enabled": false
+      }
+    }
+  },
+  "toolbar": {
+    "code_actions": true,
+    "quick_actions": true
+  },
+  "relative_line_numbers": false,
+  "show_wrap_guides": true,
+  "redact_private_values": true,
+  "confirm_quit": true,
+  "terminal": {
+    "font_weight": 400.0,
+    "env": {
+      "FIG_NEW_SESSION": "1"
+    },
+    "font_size": 13.0,
+    "font_family": "Menlo",
+    "cursor_shape": "bar"
+  },
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  },
+  "base_keymap": "VSCode",
+  "minimap": {
+    "show": "auto"
+  },
+  "file_types": {},
+  "use_on_type_format": false,
+  "show_whitespaces": "all",
+  "show_edit_predictions": true,
+  "hard_tabs": false,
+  "tab_size": 2,
+  "ui_font_size": 17.0,
+  "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "GitHub Dark Default"
+  },
+  "features": {
+    "edit_prediction_provider": "copilot"
+  }
+}
