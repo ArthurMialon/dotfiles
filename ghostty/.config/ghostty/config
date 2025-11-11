@@ -7,3 +7,4 @@ font-size=20
 # custom-shader = ghostty-shaders/spotlight.glsl
 # custom-shader = ghostty-shaders/retro-terminal.glsl
 # custom-shader = ghostty-shaders/in-game-crt.glsl
+keybind = shift+enter=text:\x1b\r

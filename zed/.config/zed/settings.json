@@ -70,7 +70,7 @@
   },
   "relative_line_numbers": false,
   "show_wrap_guides": true,
-  "redact_private_values": true,
+  "redact_private_values": false,
   "confirm_quit": true,
   "terminal": {
     "font_weight": 400.0,
@@ -99,9 +99,9 @@
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "GitHub Dark Default"
+    "dark": "One Dark"
   },
   "features": {
-    "edit_prediction_provider": "copilot"
+    "edit_prediction_provider": "zed"
   }
 }

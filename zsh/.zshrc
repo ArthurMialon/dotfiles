@@ -31,3 +31,5 @@ export NPM_TOKEN=""
 
 # Scaleway CLI autocomplete initialization.
 # eval "$(scw autocomplete script shell=zsh)"
+
+. "$HOME/.local/bin/env"
