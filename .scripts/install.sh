@@ -60,6 +60,8 @@ source $HOME/.zshrc
 mkdir -p $HOME/code/$NAME/
 cd $HOME/code/$NAME/
 
+zsh
+
 dot init https://github.com/$NAME/dotfiles.git
 
 # (re)source with out configuration

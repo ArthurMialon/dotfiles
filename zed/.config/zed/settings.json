@@ -7,6 +7,12 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "colorize_brackets": true,
+  "on_last_window_closed": "platform_default",
+  "when_closing_with_no_tabs": "keep_window_open",
+  "edit_predictions": {
+    "disabled_globs": []
+  },
   "centered_layout": {
     "right_padding": 0.20000004768371582
   },
@@ -54,10 +60,20 @@
     "dock": "right"
   },
   "languages": {
+    "Plain Text": {
+      "show_edit_predictions": false
+    },
     "TypeScript": {
+      "language_servers": [
+        "!vtsls", // For pretty error
+        "typescript-language-server",
+        "!deno",
+        "eslint",
+        "!tailwindcss-language-server"
+      ],
       "inlay_hints": {
-        "show_other_hints": true,
-        "show_parameter_hints": true,
+        "show_other_hints": false,
+        "show_parameter_hints": false,
         "show_background": false,
         "show_type_hints": false,
         "enabled": false
@@ -68,7 +84,6 @@
     "code_actions": true,
     "quick_actions": true
   },
-  "relative_line_numbers": false,
   "show_wrap_guides": true,
   "redact_private_values": false,
   "confirm_quit": true,

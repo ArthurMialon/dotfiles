@@ -29,7 +29,14 @@ export NVM_DIR="$HOME/.nvm"
 
 export NPM_TOKEN=""
 
+
 # Scaleway CLI autocomplete initialization.
 # eval "$(scw autocomplete script shell=zsh)"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/asap/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/asap/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/asap/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/asap/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
 
 . "$HOME/.local/bin/env"
