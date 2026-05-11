@@ -12,7 +12,7 @@ export ZSH="$HOME/.oh-my-zsh"
 
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
-plugins=(git aws)
+plugins=(git aws zsh-npm-scripts-autocomplete)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -34,9 +34,16 @@ export NPM_TOKEN=""
 # eval "$(scw autocomplete script shell=zsh)"
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/asap/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/asap/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f '/Users/asap/code/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/asap/code/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '/Users/asap/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/asap/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+if [ -f '/Users/asap/code/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/asap/code/google-cloud-sdk/completion.zsh.inc'; fi
 
-. "$HOME/.local/bin/env"
+# bun completions
+[ -s "/Users/asap/.bun/_bun" ] && source "/Users/asap/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+alias claude-mem='/Users/asap/.bun/bin/bun "/Users/asap/.claude/plugins/marketplaces/thedotmack/plugin/scripts/worker-service.cjs"'

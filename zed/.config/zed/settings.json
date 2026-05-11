@@ -7,49 +7,65 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "cli_default_open_behavior": "new_window",
+  "collaboration_panel": {
+    "dock": "left",
+  },
+  "remove_trailing_whitespace_on_save": false,
+  "git_panel": {
+    "dock": "left",
+    "sort_by_path": true,
+    "tree_view": true,
+  },
   "colorize_brackets": true,
   "on_last_window_closed": "platform_default",
   "when_closing_with_no_tabs": "keep_window_open",
   "edit_predictions": {
-    "disabled_globs": []
+    "provider": "zed",
+    "disabled_globs": [],
   },
   "centered_layout": {
-    "right_padding": 0.20000004768371582
+    "right_padding": 0.20000004768371582,
   },
   "file_finder": {
-    "git_status": true
+    "git_status": true,
   },
   "bottom_dock_layout": "contained",
   "tabs": {
     "activate_on_close": "left_neighbour",
     "file_icons": true,
-    "git_status": false
+    "git_status": false,
   },
   "title_bar": {
+    "show_branch_status_icon": true,
     "show_menus": false,
-    "show_branch_icon": true
   },
   "outline_panel": {
-    "indent_size": 20.0
+    "dock": "left",
+    "indent_size": 20.0,
   },
   "buffer_font_size": 15.0,
-  "icon_theme": "Catppuccin Latte",
+  "icon_theme": {
+    "mode": "dark",
+    "light": "Catppuccin Latte",
+    "dark": "Catppuccin Latte"
+  },
   "inlay_hints": {
     "show_other_hints": false,
     "show_parameter_hints": false,
     "show_value_hints": true,
     "show_type_hints": false,
-    "enabled": true
+    "enabled": true,
   },
   "buffer_font_family": "FiraCode Nerd Font",
   "agent": {
     "default_model": {
       "provider": "anthropic",
-      "model": "claude-sonnet-4-5-latest"
+      "model": "claude-sonnet-4-5-latest",
     },
-    "play_sound_when_agent_done": true,
+    "play_sound_when_agent_done": "always",
     "dock": "left",
-    "model_parameters": []
+    "model_parameters": [],
   },
   "project_panel": {
     "indent_size": 15.0,
@@ -57,32 +73,41 @@
     "entry_spacing": "comfortable",
     "hide_gitignore": false,
     "default_width": 240.0,
-    "dock": "right"
+    "dock": "right",
   },
   "languages": {
     "Plain Text": {
-      "show_edit_predictions": false
+      "show_edit_predictions": false,
+    },
+    "Vue.js": {
+      "tab_size": 1,
+      "language_servers": [
+        "!vue-language-server",
+        "vtsls", // For pretty error
+        "typescript-language-server",
+      ],
     },
     "TypeScript": {
+      "tab_size": 1,
       "language_servers": [
         "!vtsls", // For pretty error
         "typescript-language-server",
         "!deno",
         "eslint",
-        "!tailwindcss-language-server"
+        "!tailwindcss-language-server",
       ],
       "inlay_hints": {
         "show_other_hints": false,
         "show_parameter_hints": false,
         "show_background": false,
         "show_type_hints": false,
-        "enabled": false
-      }
-    }
+        "enabled": false,
+      },
+    },
   },
   "toolbar": {
     "code_actions": true,
-    "quick_actions": true
+    "quick_actions": true,
   },
   "show_wrap_guides": true,
   "redact_private_values": false,
@@ -90,19 +115,19 @@
   "terminal": {
     "font_weight": 400.0,
     "env": {
-      "FIG_NEW_SESSION": "1"
+      "FIG_NEW_SESSION": "1",
     },
     "font_size": 13.0,
     "font_family": "Menlo",
-    "cursor_shape": "bar"
+    "cursor_shape": "bar",
   },
   "telemetry": {
     "diagnostics": false,
-    "metrics": false
+    "metrics": false,
   },
   "base_keymap": "VSCode",
   "minimap": {
-    "show": "auto"
+    "show": "auto",
   },
   "file_types": {},
   "use_on_type_format": false,
@@ -112,11 +137,8 @@
   "tab_size": 2,
   "ui_font_size": 17.0,
   "theme": {
-    "mode": "system",
-    "light": "One Light",
-    "dark": "One Dark"
+    "mode": "dark",
+    "light": "GitHub Light Classic",
+    "dark": "Catppuccin Mocha",
   },
-  "features": {
-    "edit_prediction_provider": "zed"
-  }
 }
