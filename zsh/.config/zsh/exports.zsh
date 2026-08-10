@@ -1,3 +1,5 @@
+export NODE_OPTIONS="--disable-warning=DEP0040"
+
 export DENO_INSTALL="$HOME/.deno"
 export PATH="$DENO_INSTALL/bin:$PATH"
 
