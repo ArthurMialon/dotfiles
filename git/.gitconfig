@@ -9,6 +9,7 @@
 	wip = "!f() { git add . && git commit -m 'WIP:'; }; f"
 	unwip = "!f() { git reset HEAD~; }; f"
 	go = "!f() { git switch -c \"$1\" 2> /dev/null || git switch \"$1\"; }; f"
+	boom = "!f() { git branch --no-color | fzf -m | xargs -I {} git branch -D '{}'; }; f"
 	diff = "!f() { [ -z \"$GIT_PREFIX\" ] || cd \"$GIT_PREFIX\" && git diff --color \"$@\" | diff-so-fancy  | less --tabs=4 -RFX; }; f"
 	dss = "!f() { [ -z \"$GIT_PREFIX\" ] || cd \"$GIT_PREFIX\" && git diff --color \"$@\" | diff-so-fancy  | less --tabs=4 -RFX; }; f"
     autofixup = "!f() { \

@@ -14,9 +14,9 @@
   },
   "remove_trailing_whitespace_on_save": false,
   "git_panel": {
+    "group_by": "staging",
     "dock": "left",
-    "sort_by_path": true,
-    "tree_view": true,
+    "tree_view": false,
   },
   "colorize_brackets": true,
   "on_last_window_closed": "platform_default",
@@ -27,9 +27,6 @@
   },
   "centered_layout": {
     "right_padding": 0.20000004768371582,
-  },
-  "file_finder": {
-    "git_status": true,
   },
   "bottom_dock_layout": "contained",
   "tabs": {
@@ -46,11 +43,6 @@
     "indent_size": 20.0,
   },
   "buffer_font_size": 15.0,
-  "icon_theme": {
-    "mode": "dark",
-    "light": "Catppuccin Latte",
-    "dark": "Catppuccin Latte"
-  },
   "inlay_hints": {
     "show_other_hints": false,
     "show_parameter_hints": false,
@@ -137,6 +129,11 @@
   "hard_tabs": false,
   "tab_size": 2,
   "ui_font_size": 17.0,
+  "icon_theme": {
+    "mode": "dark",
+    "light": "Catppuccin Latte",
+    "dark": "Catppuccin Latte",
+  },
   "theme": {
     "mode": "dark",
     "light": "GitHub Light Classic",

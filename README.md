@@ -62,9 +62,10 @@ brew bundle dump --force
 
 ## Keyboard settings
 
-_Ultra fast keyboard_
+Ultra fast key repeat, full keyboard access, no auto-correct.
 
-```shell
-defaults write -g KeyRepeat -int 1
-defaults write -g InitialKeyRepeat -int 10
+```bash
+./.scripts/config.sh
 ```
+
+Log out and back in for the settings to take effect everywhere.
