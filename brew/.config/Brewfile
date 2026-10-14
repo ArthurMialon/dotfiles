@@ -2,40 +2,71 @@ tap "hashicorp/tap"
 tap "lihaoyun6/tap"
 tap "ngrok/ngrok"
 tap "openfga/tap"
+# Official Amazon AWS command-line interface
 brew "awscli"
+# Resource monitor. C++ version and continuation of bashtop and bpytop
 brew "btop"
+# Vector graphics library with cross-device output support
 brew "cairo"
-brew "deno"
+# Good-lookin' diffs with diff-highlight and more
 brew "diff-so-fancy"
-brew "docker"
+# Command-line fuzzy finder written in Go
 brew "fzf"
+# GitHub command-line tool
 brew "gh"
+# Library and utilities for processing GIFs
 brew "giflib"
+# Distributed revision control system
 brew "git"
+# Image manipulation library
 brew "jpeg"
+# Lightweight and flexible command-line JSON processor
 brew "jq"
+# Tool that can switch between kubectl contexts easily and create aliases
 brew "kubectx"
+# Framework for layout and rendering of i18n text
 brew "pango"
+# Library to render SVG files using Cairo
 brew "librsvg"
+# High performance and flexible authorization/permission engine
 brew "openfga"
+# Package compiler and linker metadata toolkit
 brew "pkgconf"
+# Object-relational database system
 brew "postgresql@14"
+# Easily download, build, install, upgrade, and uninstall Python packages
 brew "python-setuptools"
+# CLI proxy to minimize LLM token consumption
 brew "rtk"
+# Cross-shell prompt for astronauts
 brew "starship"
+# Organize software neatly under a single directory tree (e.g. /usr/local)
 brew "stow"
+# Display directories as trees (with optional color/HTML output)
 brew "tree"
+# Extremely fast Python package installer and resolver, written in Rust
 brew "uv"
+# Executes a program periodically, showing output fullscreen
 brew "watch"
+# Internet file retriever
 brew "wget"
+# UNIX shell (command interpreter)
 brew "zsh"
+# Fish shell like syntax highlighting for zsh
 brew "zsh-syntax-highlighting"
-brew "hashicorp/tap/terraform"
-brew "openfga/tap/fga"
+# Terminal-based AI coding assistant
 cask "claude-code"
 cask "font-fira-code-nerd-font"
+# Terminal emulator that uses platform-native UI and GPU acceleration
 cask "ghostty"
+# Reverse proxy, secure introspectable tunnels to localhost
 cask "ngrok"
+# Control your tools with a few keystrokes
 cask "raycast"
+# Open-source code editor
 cask "visual-studio-code"
+# Rust-based terminal
+cask "warp"
+# Multiplayer code editor
 cask "zed"
+npm "corepack"

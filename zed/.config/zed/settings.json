@@ -7,6 +7,21 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "ssh_connections": [
+    {
+      "host": "192.168.68.63",
+      "username": "admin",
+      "args": [],
+      "projects": [
+        {
+          "paths": [
+            "/./"
+          ]
+        }
+      ],
+      "nickname": "raspberrypi"
+    }
+  ],
   "format_on_save": "on",
   "cli_default_open_behavior": "new_window",
   "collaboration_panel": {
