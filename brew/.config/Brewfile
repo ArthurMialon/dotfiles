@@ -32,6 +32,8 @@ brew "librsvg"
 brew "openfga"
 # Package compiler and linker metadata toolkit
 brew "pkgconf"
+# Tool for managing OCI containers and pods
+brew "podman"
 # Object-relational database system
 brew "postgresql@14"
 # Easily download, build, install, upgrade, and uninstall Python packages
@@ -61,6 +63,8 @@ cask "font-fira-code-nerd-font"
 cask "ghostty"
 # Reverse proxy, secure introspectable tunnels to localhost
 cask "ngrok"
+# Browse, manage, inspect containers and images
+cask "podman-desktop"
 # Control your tools with a few keystrokes
 cask "raycast"
 # Open-source code editor
