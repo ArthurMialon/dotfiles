@@ -7,6 +7,7 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "disable_ai": false,
   "ssh_connections": [
     {
       "host": "192.168.68.63",
@@ -20,6 +21,18 @@
         }
       ],
       "nickname": "raspberrypi"
+    },
+    {
+      "host": "192.168.68.57",
+      "username": "admin",
+      "args": [],
+      "projects": [
+        {
+          "paths": [
+            "/home/admin"
+          ]
+        }
+      ]
     }
   ],
   "format_on_save": "on",
@@ -37,7 +50,7 @@
   "on_last_window_closed": "platform_default",
   "when_closing_with_no_tabs": "keep_window_open",
   "edit_predictions": {
-    "provider": "zed",
+    "provider": "copilot",
     "disabled_globs": [],
   },
   "centered_layout": {
@@ -101,6 +114,7 @@
         "!vtsls", // For pretty error
         "typescript-language-server",
         "!deno",
+        "biome",
         "eslint",
         "!tailwindcss-language-server",
       ],

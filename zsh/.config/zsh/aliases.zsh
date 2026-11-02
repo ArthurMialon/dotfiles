@@ -11,3 +11,4 @@ alias dotfiles="cd $HOME/code/arthurmialon/dotfiles"
 alias tf=terraform
 alias dev="cd $HOME/code"
 alias y="yarn"
+alias docker="podman"

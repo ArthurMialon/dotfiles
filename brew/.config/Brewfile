@@ -1,3 +1,4 @@
+tap "anomalyco/tap"
 tap "hashicorp/tap"
 tap "lihaoyun6/tap"
 tap "ngrok/ngrok"
@@ -61,6 +62,8 @@ cask "claude-code"
 cask "font-fira-code-nerd-font"
 # Terminal emulator that uses platform-native UI and GPU acceleration
 cask "ghostty"
+# Local voice dictation
+cask "anomalyco/tap/hex", trusted: true
 # Reverse proxy, secure introspectable tunnels to localhost
 cask "ngrok"
 # Browse, manage, inspect containers and images
